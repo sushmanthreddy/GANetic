@@ -161,17 +161,16 @@ print(disc(img).shape)
 
 ### vanilla_gan
 
-```
+```python
 import torch
 
 from ganetic.vanilla_gan import Discriminator, Generator
 
 img = torch.randn(1, 3, 128, 128)
 
-gen = Generator(img
-)
+gen = Generator()
 print(gen(img).shape)
-disc = Discriminator(img)
+disc = Discriminator()
 print(disc(img).shape)
 
 ```
